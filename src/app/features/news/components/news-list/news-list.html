@@ -1,0 +1,38 @@
+<h2>All News List From Database</h2>
+<div class="head">
+  <h3>News List</h3>
+</div>
+
+<table border="2" [width]="1400">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Main Title</th>
+      <th>Sub Title</th>
+      <th>Body</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let item of newsData; let i = index">
+  <td>{{ item.id }}</td>
+  <td>{{ item.mainTitle}}</td>
+  <td>{{ item.subTitle }}</td>
+  <td>{{ item.body}}</td>
+
+</tr>
+
+
+  </tbody>
+</table>
+
+currentPage = {{currentPage}}
+<div class="pagination">
+  <a
+    *ngFor="let pageNo of pages"
+    [class.active]="currentPage === pageNo"
+    routerLink="/news/list"
+    [queryParams]="{ page: pageNo }"
+    >{{ pageNo }}</a
+  >
+</div>

@@ -1,0 +1,190 @@
+
+// Ticker News=========
+
+.ticker {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40px;
+    // margin: 0 auto;
+    // align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+.news {
+    width: 76%;
+    background: #cc4444;
+    padding: 0 2%;
+}
+.title {
+    width: 20%;
+    text-align: center;
+    background: #c81c1c;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
+.title:after {
+    position: absolute;
+    content: "";
+    right: -14%;
+    border-left: 25px solid #c81c1c;
+    border-top: 37px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 37px solid transparent;
+    top: 0;
+}
+.title h5 {
+    font-size: 18px;
+    margin: 8% 0;
+}
+.news marquee {
+    font-size: 18px;
+    padding: 17px 0 5px 0;
+}
+// Ticker News=========
+// Featured=========
+.featured-news .row .one{
+  height: 300px;
+  position: relative;
+
+}
+.featured-news .row .one img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  object-fit: cover;
+
+}
+.featured-news .row .one .featured-news-text{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.5);
+}
+.featured-news .row .one .featured-news-text p{
+letter-spacing: 0.2rem;
+line-height: 2px;
+}
+.featured-news .row .one .featured-news-text a{
+text-decoration: none;
+border-style: none;
+color: #fff;
+font-size: 0.9rem;
+
+}
+.featured-news .row .one .featured-news-text a::after{
+content: "";
+display: block;
+  width: 30%;
+  height: 3px;
+  background-color: #27aa60;
+
+
+}
+
+// Featured=========
+// Subscription======
+.subscription{
+
+  background: #a1eb98;
+}
+.subscription .row{
+  display: flex;
+}
+// Subscription======
+// Blog ==============
+.blog .row .post-news a{
+  font-size: 0.9rem;
+  color: #27aa60;
+  font-weight: bold;
+  text-decoration: none;
+  border-style: none;
+}
+
+.blog .row .post-news .post1{
+  cursor: pointer;
+
+}
+.post1 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+   transition: transform 0.3s ease-in-out;
+}
+.post1:hover img{
+transform: scale(0.95);
+}
+// Blog ==============
+// LATEST NEWS ==============
+.latest-news {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.latest-news-title {
+  // text-align: center;
+  // margin-bottom: 15px;
+  // font-size: 1.5rem;
+  // color: #333;
+    letter-spacing: 0.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.news-item{
+  cursor: pointer;
+}
+.news-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.news-item img:hover {
+  transform: scale(1.05);
+}
+
+.news-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.news-item a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+// LATEST NEWS==============
+// Fav NEWS==============
+.side2-title{
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+.side2 .row .fav{
+  cursor: pointer;
+  padding: 12px;
+  transition: all 0.3s ease;
+  // border: 1px solid red;
+}
+.side2 .row .fav:hover{
+  background: #a1eb98;
+}
+// Fav NEWS==============
+

@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-5 py-3">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" [routerLink]="['/home'] [class.active]==='/home'">Home</a> -->
+          <a class="nav-link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/members']">Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/photo-album']">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Laws and Regulations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about-us']">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact-us']">Contact Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Language
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Arabic</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <!-- Social Media Icons -->
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <i class="fa-brands fa-youtube px-2 font-weight-bold"></i>
+        </li>
+        <li class="nav-item">
+          <i class="fa-brands fa-instagram px-2 font-weight-bold"></i>
+        </li>
+        <li class="nav-item">
+          <i class="fa-brands fa-twitter px-2 font-weight-bold"></i>
+        </li>
+        <li class="nav-item">
+          <i class="fa-brands fa-pinterest px-2 font-weight-bold"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
